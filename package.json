@@ -1,0 +1,39 @@
+{
+  "name": "gremlin-ogm",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Gremlin OGM",
+  "license": "MIT",
+  "author": {
+    "name": "Liem Vo",
+    "email": "liemlylac@gmail.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "rimraf ./build && tsc",
+    "watch": "./node_modules/.bin/tsc -w",
+    "lint": "echo \"No lint config\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liemlylac/gremlin-ogm.git"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint": "^7.19.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.7.2"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
